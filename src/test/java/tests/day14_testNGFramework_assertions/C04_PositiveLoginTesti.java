@@ -42,7 +42,7 @@ public class C04_PositiveLoginTesti {
         testotomasyonuPage.emailKutusu.sendKeys("wise@gmail.com");
 
         // 4- Kullanici sifresi olarak gecerli password girin
-        testotomasyonuPage.passwordKutusu.sendKeys("12345");
+        testotomasyonuPage.passwordKutusu.sendKeys("123456");
 
         // 5- Login butonuna basarak login olun
         testotomasyonuPage.loginButonu

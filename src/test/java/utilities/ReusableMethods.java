@@ -6,10 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import tests.projem.AdminExitPage;
-import tests.projem.AdminHomePage;
-import tests.projem.HomePage;
-import tests.projem.LoginPage;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -228,60 +225,6 @@ public class ReusableMethods {
         return target;
     }
 
-
-
-    public static void signIn(String email){
-
-        Driver.getDriver().get(ConfigReader.getProperty("lfcHomePageUrl"));
-
-        ReusableMethods.bekle(2);
-        HomePage homePage = new HomePage();
-
-        homePage.headerSignInButton.click();
-
-        ReusableMethods.bekle(1);
-
-        LoginPage loginPage = new LoginPage();
-
-        loginPage.loginEmailBox.sendKeys(email);
-        loginPage.loginPasswordBox.sendKeys(ConfigReader.getProperty("partnerpassword"));
-        ReusableMethods.bekle(1);
-
-        loginPage.signInButton.click();
-        ReusableMethods.bekle(1);
-
-    }
-
-
-    public static void logout(WebDriver driver){
-
-        AdminExitPage adminExitPage = new AdminExitPage();
-
-        adminExitPage.logoutImgButton.click();
-        adminExitPage.logoutLink.click();
-
-
-    }
-
-
-    public static void singOut(){
-
-        HomePage homePage = new HomePage();
-        homePage.headerSignOutButton.click();
-
-    }
-
-
-    public static void  dashbordSidebarMenu(){
-
-        AdminHomePage adminHomePage = new AdminHomePage();
-
-        Actions actions = new Actions(Driver.getDriver());
-
-        actions.moveToElement(adminHomePage.AdminsidebarDashboardMenu).perform();
-
-
-    }
 
 
 
