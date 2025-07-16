@@ -26,8 +26,9 @@ public class C03_SoftAssert {
 
         softAssert.assertEquals(actualUrl,expectedUrl,"zero sayfasına gidilemedi");
 
-    // 3. Sign in butonuna basin
-        ZeroPage zeroPage =new ZeroPage();
+
+        // 3. Sign in butonuna basin
+        ZeroPage zeroPage = new ZeroPage();
         zeroPage.anasayfaSignInButton.click();
 
     // 4. Login kutusuna “username” yazin

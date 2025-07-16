@@ -42,7 +42,7 @@ public class TestotomasyonuPage {
     @FindBy(xpath = "//div[@class=' heading-sm mb-4']")
     public WebElement ilkUrunSayfasindakiIsimElementi;
 
-    @FindBy(xpath = "((//*[.='Account'])[1]")
+    @FindBy(xpath = "(//*[text()='Account'])[1]")
     public WebElement accountLinki;
 
     @FindBy(id = "email")
@@ -54,7 +54,7 @@ public class TestotomasyonuPage {
     @FindBy(id = "submitlogin")
     public WebElement loginButonu;
 
-    @FindBy(xpath = "//*[.='Logout'])[2]")
+    @FindBy(xpath = "(//*[text()='Logout'])[2]")
     public WebElement logoutButonu;
 
 
